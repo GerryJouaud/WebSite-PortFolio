@@ -1,0 +1,313 @@
+* {
+    /* reset marge site*/
+    margin: 0;
+    top: 0;
+}
+
+.logo {
+    /* Position et taille LOGO */
+    width: 80px;
+    padding: 10px 0px 10px 50px;
+}
+
+.logo:hover {
+    /* Survol LOGO*/
+    opacity: 0.6;
+}
+
+header {
+    /* menu fixe*/
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    /* liens menu*/
+    
+    margin-right: 80px;
+
+}
+
+nav a:hover {
+    /* survol menu*/
+    text-decoration: underline;
+}
+
+a {
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a {
+
+    margin-right: 50px;
+}
+
+
+
+a:hover {
+    /*Survol des liens hypertextes*/
+    color: black;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+nav,
+footer {
+    /*disposition des boutons de navigation et des réseaux sociaux*/
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.liens-reseaux {
+    /*Position et tailleliens réseaux*/
+
+    width: 100px;
+    padding-top: 10px;
+
+}
+
+
+
+.titresPages {
+    /* bandeau titres pages*/
+    background-color: #1A191E;
+    padding: 1px;
+}
+
+
+
+h1 {
+    /* titre pages*/
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Cardo', serif;
+    font-size: 3em;
+    margin: 100px 0px 20px 100px;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    /* intro pages  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cardo', serif;
+    font-size: 2em;
+    margin: 30px 0px 30px 0px;
+    margin: 20px 300px 20px 300px;
+    padding: 10px;
+
+}
+
+h3 {
+    /* titres formulaires*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Cardo', serif;
+    font-size: 3em;
+    /* Titres*/
+    margin: 50px 0px 20px 50px;
+    color: white;
+    padding: 20px;
+}
+
+h4 {
+    /* titre sur image accueil*/
+    display: flex;
+    font-family: 'Cardo', serif;
+    font-size: 3em;
+    margin: 100px 0px 20px 100px;
+    color: white;
+    padding: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+
+@media screen  and (max-width: 619px) { /* petit smartphone*/
+
+
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    a{
+        font-size: 14px;
+    }
+    nav a{
+         margin: 10px 15px;
+    }
+    footer a{
+        margin: 0px;
+    }
+    .logo{
+        padding: 0px;
+    }
+  
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        margin: 0px 0px;
+        font-size: 1em;
+        padding: 5px;
+    }
+    h2 br{
+        display:none;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+    h4{
+        display: none;
+    }
+
+    .titresPages{
+        margin-top: 40px;
+        padding-left: 0px;
+    }
+   
+}
+
+@media screen and (min-width:620px) and (max-width: 768px) { /* smartphone*/
+
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a{
+        
+        margin: 10px 15px;
+    }
+    .logo{
+        padding: 0px;
+    }
+  
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        margin: 0px;
+        font-size: 1.7em;
+        padding: 0px;
+        
+    }
+    h2 br{
+        display:none;
+    }
+    h3{
+        font-size: 1.8em;
+    }
+    h4{
+        display: none;
+    }
+
+    .titresPages{
+        margin-top: 40px;
+        padding-left: 0px;
+    }
+   
+}
+@media screen and (min-width: 769px) and (max-width: 992px) { /* tablette*/
+
+
+    nav a{
+            
+        margin: 10px 15px;
+    }
+    .logo{
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        margin: 0px;
+        font-size: 1.8em;
+        padding: 10px;
+    }
+    h3{
+        font-size: 2.5em;
+        margin: auto;
+    }
+   
+    .titresPages{
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    form{
+        max-width: 80%;
+    }
+}
+@media screen and (min-width:993px) and (max-width: 1200px) { /* laptop*/
+
+    nav a{
+            
+        margin: 10px 40px;
+    }
+    .logo{
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        margin: 0px;
+        font-size: 1.9em;
+        padding: 10px;
+    }
+    h3{
+        font-size: 2.5em;
+        margin: auto;
+    }
+    h4{
+        display: flex;
+        font-family: 'Cardo', serif;
+        font-size: 1.7em;
+        margin: 100px 0px 0px 100px;
+        color: white;
+        padding: 20px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    
+
+    .titresPages{
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    form{
+        max-width: 80%;
+    }
+}
+@media screen and (min-width:1200px) and (max-width: 1850px) { /* laptop*/
+
+
+nav a{
+        
+    margin-right: 40px;
+}
+h2{
+    margin: 0px;
+    font-size: 1.8em;
+    padding: 10px;
+}
+}

@@ -1,0 +1,218 @@
+.photoAccueil {
+    /* photo arrière plan accueil*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../Images/autres/imageAccueil.jpg");
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 150px 50px;
+    max-width: 100%;
+}
+
+img {
+    /* attributs images*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.ctaCV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#495057, #343A40);
+    border-radius: 3px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 20px 30px;
+    margin: 20px 850px 20px 850px;
+    
+}
+.ctaCV:hover {
+    text-decoration: none;
+    background: linear-gradient(#6C757D, #495057);
+    color: white;
+}
+
+
+.contact {
+    /* formulaire*/
+    display: flex;
+    flex-direction: column;
+    background-color: #1A191E;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.formNomMail {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1000px;
+}
+
+.formColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ctaEnvoyer {
+    /* Call to action, style boutons redirections*/
+
+    background: linear-gradient(#495057, #343A40);
+    border-radius: 3px;
+    padding: 20px 30px;
+    margin: 20px 400px 20px 400px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.ctaEnvoyer:hover {
+    background: linear-gradient(#6C757D, #495057);
+    color: white;
+
+}
+
+@media screen  and (max-width: 619px) { /* petit smartphone*/
+
+    .photoAccueil{
+        margin-top: 30px;
+        padding: 100px ;
+        
+    }
+    .ctaCV{
+        margin: 14px 110px 14px 110px;
+        font-size: 0.8em;
+    }
+    h4{ 
+        display: none;
+    }
+   h3{
+    margin:auto;
+    margin-top: 20px;
+    padding: 0px;
+   }
+    form{
+        max-width: 100%;
+    }
+    .formColumn{
+        max-width: 160px ;
+    }
+    .ctaEnvoyer {
+        
+        margin: auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+    } 
+
+
+}
+
+@media screen and (min-width:620px) and (max-width: 768px) { /* smartphone*/
+    
+    .photoAccueil{
+        margin-top: 0px;
+        padding: 150px 50px;
+        
+    }
+    .ctaCV{
+        margin: 14px 200px 14px 200px;
+        font-size: 0.8em;
+    }
+    h4{ 
+        display: none;
+    }
+   
+    .ctaEnvoyer {
+        
+        margin: auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) { /* tablette*/
+    
+    .photoAccueil{
+        margin-top: 0px;
+        padding: 150px 50px;
+        
+    }
+    .ctaCV{
+        margin: 14px 300px 14px 300px;
+        font-size: 0.8em;
+    }
+    h4{ 
+        display: none;
+    }
+    form{
+        margin: auto;
+       
+    }
+    .ctaEnvoyer {
+        
+        margin: auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:993px) and (max-width: 1069px) { /* entre deux*/
+    .ctaCV{
+        margin: 14px 410px 14px 410px;
+        font-size: 0.8em;
+    }
+    
+
+}
+@media screen and (min-width:1070px) and (max-width: 1199px) { /* entre deux*/
+    .ctaCV{
+        margin: 14px 450px 14px 450px;
+        font-size: 0.8em;
+    }
+    
+
+}
+@media screen and (min-width:1200px) and (max-width: 1283px) { /* laptop*/
+    
+    h4{ 
+        font-size: 1.7em;
+    }
+    .ctaCV{
+        margin: 14px 509px 14px 509px;
+        font-size: 0.9em;
+    }
+    .photoAccueil{
+        padding: 40px 50px;
+    }
+}
+@media screen and (min-width:1284px) and (max-width: 1850px) { /* laptop*/
+    
+    h4{ 
+        font-size: 1.7em;
+    }
+    .ctaCV{
+        margin: 14px 550px 14px 550px;
+        font-size: 0.9em;
+    }
+    .photoAccueil{
+        padding: 40px 50px;
+    }
+}

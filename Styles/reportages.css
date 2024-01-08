@@ -1,0 +1,113 @@
+.gridReportages {
+    /* grid Reportages*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 5px;
+    padding: 10px;
+    margin: 10px 120px 10px 120px;
+    
+    
+}
+
+img {
+    /* attributs images*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.reportage-hover {
+    /* reportage hover*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.lien-conteneur-reportage {
+    position: relative;
+    margin: 0px 0px;
+}
+
+.lien-conteneur-reportage:hover .reportage-hover {
+    display: flex;
+}
+
+@media screen  and (max-width: 619px) { /* petit smartphone*/
+
+    .gridReportages{
+        margin: 0px;
+         display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+        margin: 3px;
+    }
+   
+    .reportage-hover{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 15px;
+    }
+}
+
+@media screen  and (min-width:620px) and (max-width: 768px) { /* smartphone*/
+    .gridReportages{
+        margin: 0px;
+         display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+        margin: 3px;
+    }
+   
+    .reportage-hover{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) { /* tablette*/
+    .gridReportages{
+        margin: 10px;
+    }
+    .reportage-hover{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:993px) and (max-width: 1200px) { /* laptop*/
+    .gridReportages{
+        margin: 0px 30px;
+    }
+    .reportage-hover{
+        font-size: 16px;
+        padding: 1px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1200px) and (max-width: 1850px) { /* laptop*/
+    .gridReportages{
+        margin: 0px 100px;
+    }
+    .reportage-hover{
+        font-size: 18px;
+        padding: 30px;
+        text-align: center;
+    }
+}
