@@ -8,7 +8,7 @@ Portfolio:
 ![image](https://github.com/GerryJouaud/CV-WEBSITE-V1/assets/145365777/f45d8314-c3fe-4f45-98f4-822be6fb94e0)
 
 
-I used pictures from the website Unplash for the section homepage and about, others are mine.
+I used pictures from the website Unplash for the section homepage and about, others are my property.
 Here are the authors: 
 
 - Alexandre Debieve
